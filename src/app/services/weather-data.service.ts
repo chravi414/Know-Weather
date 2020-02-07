@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class WeatherDataService {
-  public mapBoxToken = 'pk.eyJ1IjoiY2hyYXZpNDE0IiwiYSI6ImNrMXVoaW1jaTBwN3kzaHF5dmp3dHFwYTcifQ.chUU1f2nmdvLNT2Xp6efYg';
-  public darkSkyToken = '4ab909be9e7658b9de4274c3ff28c8cd';
+  public mapBoxToken = environment.MAPBOX_KEY;
+  public darkSkyToken = environment.DARKSKY_KEY;
   private proxy = 'https://cors-anywhere.herokuapp.com/';
   
   
