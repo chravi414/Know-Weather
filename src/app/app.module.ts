@@ -6,7 +6,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WeatherInfoComponent } from './weather-info/weather-info.component';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
@@ -17,8 +16,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,
-    SlickCarouselModule    
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
